@@ -17,28 +17,28 @@ body {
   padding: 40px;
 }
 #hero-header {
-    width: 80%;
-    margin: 0 auto;
-    height: 450px;
-    margin-bottom: 35px;
+  width: 80%;
+  margin: 0 auto;
+  height: 450px;
+  margin-bottom: 35px;
 }
 .text-container {
-    font-family: monospace;
-    color: whitesmoke;
-    white-space: pre-wrap; /* Preserve spaces and line breaks */
-    text-align: center;
-    min-height: 365px;
-    font-weight: bold;
-  }
-  .text-container span {
-    font-size: 5.5vw;
-  }
-  .hidden {
-    display: none;
-  }
-  .visible {
-    visibility: visible;
-  }
+  font-family: monospace;
+  color: whitesmoke;
+  white-space: pre-wrap; /* Preserve spaces and line breaks */
+  text-align: center;
+  min-height: 365px;
+  font-weight: bold;
+}
+.text-container span {
+  font-size: 5.5vw;
+}
+.hidden {
+  display: none;
+}
+.visible {
+  visibility: visible;
+}
 #toggle-light-button {
   font-size: 50px;
   border-radius: 50%;
@@ -49,9 +49,6 @@ body {
 }
 #toggle-light-button:hover {
   background-color: lightgreen;
-}
-section {    
-
 }
 #services {
   width: fit-content;
@@ -97,19 +94,19 @@ section h1 {
   margin: 20px;
   padding: 20px;
   text-align: center;
-  width: calc(100% - 40px); /* Full width minus padding */
-  max-width: 250px; /* Maximum width of the card */
-  box-sizing: border-box; /* Ensure padding and border are included in the width */
+  width: calc(100% - 40px); 
+  max-width: 250px; 
+  box-sizing: border-box; 
   margin-bottom: 0;
 }
 
 .team-member img {
   border-radius: 50%;
-  width: 100px; /* Fixed size for the image */
-  height: 100px; /* Fixed size for the image */
-  object-fit: cover; /* Maintain aspect ratio */
-  max-width: 100%; /* Ensure the image does not exceed the container width */
-  height: auto; /* Adjust height based on width to maintain aspect ratio */
+  width: 100px; 
+  height: 100px; 
+  object-fit: cover; 
+  max-width: 100%; 
+  height: auto; 
 }
 
 .team-member h2 {
@@ -148,7 +145,6 @@ section h1 {
   border-bottom: 5px dotted white;
   width: 50%;
   margin: 50px auto;
-  margin-bottom: 70px;
 }
 .contactform {
 
@@ -172,7 +168,7 @@ section h1 {
   background-color: #333;
   display: block;
   padding: 25px;
-  margin: 50px 0;
+  margin: 70px 0;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
