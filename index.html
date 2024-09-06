@@ -35,23 +35,23 @@
 
         <div id="contact-div">
             <div class="contactform">
-                <form id="contact" action="mailto:anythingiotxyz@gmail.com" method="post" enctype="text/plain">
+                <form id="contact">
                     <h3>Get in touch!</h3>                    
                     <h4>Name</h4>
                     <fieldset>
-                      <input placeholder="Your Name" type="text" tabindex="4" required>
+                      <input placeholder="Your Name" id="name" name="name" type="text" tabindex="4" required>
                     </fieldset>
                     <h4>Email</h4>
                     <fieldset>
-                      <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                      <input placeholder="Your Email Address" id="email" name="email" type="email" tabindex="2" required>
                     </fieldset>
                     <h4>Phone</h4>
                     <fieldset>
-                      <input placeholder="Your Phone Number " type="tel" tabindex="3" required>
+                      <input placeholder="Your Phone Number " id="tel" type="tel" name="tel" tabindex="3" required>
                     </fieldset>
                     <h4>Additional Details</h4>
                     <fieldset>
-                      <textarea placeholder="Any addtional details (optional)" tabindex="5" required></textarea>
+                      <textarea placeholder="Any addtional details (optional)" id="details" name="details" tabindex="5" required></textarea>
                     </fieldset>
                     <fieldset>
                       <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
@@ -66,6 +66,7 @@
     <footer>
         <p>&copy; 2024 Anything IoT. All rights reserved.</p>
     </footer>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
     <script src="script.js"></script>
 </body>

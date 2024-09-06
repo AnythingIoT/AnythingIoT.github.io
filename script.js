@@ -4,6 +4,7 @@ let index = 0;
 
 function init() {
     revealText();
+    // Initialize EmailJS with your user ID
 }
 function revealText() {
    
@@ -27,12 +28,6 @@ function scrollToSection(id) {
     document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
 }
 
-document.getElementById('contact').addEventListener('submit', function(event) {
-    event.preventDefault();
-    alert('Your message has been sent!');
-    this.reset();
-});
-
 document.getElementById('toggle-light-button').addEventListener('click', function(event) {
     val = this.value;
     console.log(val);
@@ -49,4 +44,38 @@ document.getElementById('toggle-light-button').addEventListener('click', functio
     }
 });
 
+
+
+document.getElementById('contact').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    // Collect form data
+    const form = event.target;
+    const formData = new FormData(form);
+
+    // Prepare the email data
+    const emailData = {
+        from_name: formData.get('name'),
+        from_email: formData.get('email'),
+        message: formData.get('details')
+    };
+
+    // Send email using EmailJS
+    emailjs.send('service_503741r', 'template_gqir1q7', emailData)
+        .then(function(response) {
+            console.log('Success:', response);
+            alert("Message sent successfully!")
+            form.reset();
+        })
+        .catch(function(error) {
+            console.error('Error:', error);
+            alert("Failed to send message.")
+        });
+});
+
+(function() {
+    // https://dashboard.emailjs.com/admin/account
+    emailjs.init("gGmZYwsOc8VX_zGIE"); // Replace YOUR_USER_ID with your actual EmailJS User ID
+    
+})();
 init();
