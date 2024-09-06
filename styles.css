@@ -54,6 +54,8 @@ section {
 
 }
 #services {
+  width: fit-content;
+  margin: 0 auto;
   border-radius: 100px;
   padding: 20px;
   text-align: center;
@@ -64,8 +66,15 @@ section {
 .service {
     color: white;
     padding: 20px;
+    border-right: #888;
 
 }
+
+.middle-service {
+  border-left: 2px solid white; 
+  border-right: 2px solid white;
+}
+
 .service h2 {
   font-weight: bold;
 }
@@ -203,7 +212,11 @@ footer {
     bottom: 0;
     width: 100%;
 }
-
+@media only screen and (max-width:1000px) {
+  .text-container span {
+    font-size: 8vw;
+  }
+}
 @media only screen and (max-width:600px) {
   #hero-header {
     width: 100%;
