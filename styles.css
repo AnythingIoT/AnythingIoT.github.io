@@ -323,8 +323,19 @@ footer {
   .text-container {
     min-height: 275px;
   }
-  .team-member {
-    margin: 20px 0;
-  }
 
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .team-member {
+      width: calc(100% - 40px); /* Adjust width on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .team-member img {
+      width: 80px; /* Adjust image size on very small screens */
+      height: 80px;
+  }
 }
