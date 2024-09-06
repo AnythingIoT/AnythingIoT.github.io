@@ -36,7 +36,7 @@ document.getElementById('toggle-light-button').addEventListener('click', functio
         this.value = "off";
         this.style = "background-color: red";
         document.getElementById('homediv').style.display = "none";
-        alert("We build fast and from scratch. Contact us today!")
+        alert("We can make it happen!")
     } else {
         this.textContent = "ON";
         this.value = "on";
@@ -76,6 +76,6 @@ document.getElementById('contact').addEventListener('submit', function(event) {
 (function() {
     // https://dashboard.emailjs.com/admin/account
     emailjs.init("gGmZYwsOc8VX_zGIE"); // Replace YOUR_USER_ID with your actual EmailJS User ID
-    
+
 })();
 init();
