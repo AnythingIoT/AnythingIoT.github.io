@@ -3,9 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Software Engineering Services</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    Hello, website under development.
+
+    <section id="home">
+        <div id="homediv" class="hero">
+            <div>
+                <div id="hero-header">
+                    <div id="introtext" class="text-container"></div>
+                    <button id="toggle-light-button" value="on">ON</button>
+                </div>
+            </div>
+
+            <div id="services">
+                <div class="service">
+                    <h2>Software Development</h2>
+                    <p>Tailored solutions to meet your specific needs and objectives.</p>
+                </div>
+                <div class="service">
+                    <h2>Consulting & Strategy</h2>
+                    <p>Expert advice to help you navigate the complexities of software development.</p>
+                </div>
+                <div class="service">
+                    <h2>Maintenance & Support</h2>
+                    <p>Ongoing support to ensure your systems run smoothly and efficiently.</p>
+                </div>
+            </div>            
+        </div>
+
+        <div id="contact-div">
+            <div class="contactform">
+                <form id="contact" action="mailto:anythingiotxyz@gmail.com" method="post" enctype="text/plain">
+                    <h3>Get in touch!</h3>                    
+                    <h4>Name</h4>
+                    <fieldset>
+                      <input placeholder="Your Name" type="text" tabindex="4" required>
+                    </fieldset>
+                    <h4>Email</h4>
+                    <fieldset>
+                      <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                    </fieldset>
+                    <h4>Phone</h4>
+                    <fieldset>
+                      <input placeholder="Your Phone Number " type="tel" tabindex="3" required>
+                    </fieldset>
+                    <h4>Additional Details</h4>
+                    <fieldset>
+                      <textarea placeholder="Any addtional details (optional)" tabindex="5" required></textarea>
+                    </fieldset>
+                    <fieldset>
+                      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <footer>
+        <p>&copy; 2024 Anything IoT. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
