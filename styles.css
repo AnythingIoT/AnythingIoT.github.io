@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-image: url(resources/images/Gemini_Generated_Image_3rqvbk3rqvbk3rqv.jfif);
-    background-size: contain;
+    background-size: cover;
     color: white;
 }
 
@@ -120,7 +120,6 @@ section h1 {
   font-style: italic;
 }
 .more-info {
-  display: none;
   margin-top: 10px;
   font-size: 0.9em;
   color: white;
