@@ -78,7 +78,75 @@ section {
 .service h2 {
   font-weight: bold;
 }
+section h1 {
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
 
+.team-member {
+  background: #333;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  width: 250px;
+  min-height: 200px;
+  margin-bottom: 0;
+}
+
+.team-member img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.team-member h2 {
+  margin: 10px 0;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.team-member p {
+  color: white;
+  font-style: italic;
+}
+.more-info {
+  display: none;
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: white;
+}
+#button-info {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#button-info:hover {
+  background-color: #0056b3;
+}
+.break {
+  border-bottom: 5px dotted white;
+  width: 50%;
+  margin: 50px auto;
+  margin-bottom: 70px;
+}
 .contactform {
 
     max-width: 40%;

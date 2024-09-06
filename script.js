@@ -44,7 +44,14 @@ document.getElementById('toggle-light-button').addEventListener('click', functio
     }
 });
 
-
+function showMoreInfo(memberId) {
+    const infoElement = document.getElementById(`info-${memberId}`);
+    if (infoElement.style.display === 'none' || !infoElement.style.display) {
+        infoElement.style.display = 'block';
+    } else {
+        infoElement.style.display = 'none';
+    }
+}
 
 document.getElementById('contact').addEventListener('submit', function(event) {
     event.preventDefault();
