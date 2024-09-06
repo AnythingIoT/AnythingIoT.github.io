@@ -76,15 +76,15 @@ body {
   font-weight: bold;
 }
 section h1 {
+  font-size: 40px;
   text-align: center;
-  text-decoration: underline;
-  text-underline-offset: 10px;
 }
 .team {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 20px;
+  padding-top: 0;
 }
 
 .team-member {
@@ -300,6 +300,9 @@ footer {
   #services {
     display: block;
   }
+  section h1 {
+    font-size: 35px;
+  }
   .middle-service {
     border-left: none; 
     border-right: none;
@@ -322,16 +325,15 @@ footer {
 
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .team-member {
-      width: calc(100% - 40px); /* Adjust width on smaller screens */
+      width: calc(100% - 40px); 
   }
 }
 
 @media (max-width: 480px) {
   .team-member img {
-      width: 80px; /* Adjust image size on very small screens */
+      width: 80px;
       height: 80px;
   }
 }
