@@ -275,7 +275,7 @@ footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px;
+    padding: 10px 0;
     position: relative;
     bottom: 0;
     width: 100%;
@@ -320,4 +320,8 @@ footer {
   .text-container {
     min-height: 275px;
   }
+  .team-member {
+    margin: 20px 0;
+  }
+
 }
