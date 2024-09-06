@@ -57,8 +57,10 @@ document.getElementById('contact').addEventListener('submit', function(event) {
     const emailData = {
         from_name: formData.get('name'),
         from_email: formData.get('email'),
-        message: formData.get('details')
+        from_phone: formData.get('phone'),
+        message: formData.get('message')
     };
+    console.log(emailData);
 
     // Send email using EmailJS
     emailjs.send('service_503741r', 'template_gqir1q7', emailData)
