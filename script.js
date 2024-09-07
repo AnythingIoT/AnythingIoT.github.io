@@ -1,4 +1,4 @@
-const introtext = "IoT Consulting & Software Development";
+const introtext = "IoT Consulting & Software Development Services";
 const textContainer = document.getElementById('introtext');
 let index = 0;
 
